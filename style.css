@@ -9,13 +9,14 @@ body{
     /* horizontaal */
     grid-template-columns: 1fr;
     /* verticaal */
-    grid-template-rows: 5rem 31rem 31rem 26rem;
+    grid-template-rows: 3rem 24rem 31rem 26rem;
     /* geen ruimte bij de randen */
-    margin: 0rem;;
+    margin: 0rem;
+    width: 100%;
 }
    
 
-/* NAV */
+/* NAVIGATIE */
 
 nav{
     /* linkt aan grid */
@@ -33,8 +34,7 @@ nav{
 }
 
 
-
-
+/* HEADER */
 
 header{
     /* linkt aan header */
@@ -47,11 +47,20 @@ header{
     height: 100%
 }
 
+
+/* NAVIGATIE */
+
 main{
     /* linkt aan main */
     grid-area: main;
     background-color: pink;
 }
+
+h1{
+    text-align: center;
+}
+
+
 
 footer{
     /* linkt aan footer */
