@@ -53,7 +53,7 @@ header{
 main{
     /* linkt aan main */
     grid-area: main;
-    background-color: pink;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
