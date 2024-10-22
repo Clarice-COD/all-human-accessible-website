@@ -207,5 +207,18 @@ h1{
 footer{
     /* linkt aan footer */
     grid-area: footer;
-    background-color: rgb(255, 251, 0);
-}
+    background-color: #F8E9C2;
+
+    & p{
+      margin-left: 2rem;
+      font-size: 1rem;
+      line-height: 1.4;
+      color: #567046;
+    }
+  }
+  
+  h2{
+    margin-top: 3rem;
+    margin-left: 2rem;
+    color: #567046;
+  }
