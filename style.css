@@ -15,26 +15,47 @@ body{
 }
    
 
+
+/* NAV */
+
 nav{
+    /* linkt aan grid */
     grid-area: nav;
-    background-color: rgb(255, 140, 0);
-    
+    background-color: rgb(255, 140, 0);   
 }
 
+.logo{
+    width: 5rem;
+    margin: 1rem;
+}
+
+
+
+
+
+
+
+
 header{
+    /* linkt aan header */
     grid-area: header;
     background-color: rgb(162, 255, 49);
 }
 
 main{
+    /* linkt aan main */
     grid-area: main;
     background-color: pink;
 }
 
 footer{
+    /* linkt aan footer */
     grid-area: footer;
     background-color: rgb(255, 251, 0);
 }
+
+
+
 
     /* nav{
     grid-area: nav;
