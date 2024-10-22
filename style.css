@@ -72,8 +72,9 @@ h1{
   }
   p{
     margin-top: 8vw;
-    text-align: center;
-    font-size: 5vw;
+    text-align: left;
+    margin-left: 1rem;
+    font-size: 1.4rem;
     color: #000000;
   }
 
@@ -207,70 +208,3 @@ footer{
     grid-area: footer;
     background-color: rgb(255, 251, 0);
 }
-
-
-
-
-    /* nav{
-    grid-area: nav;
-    background-image: linear-gradient(rgb(0, 0, 0) , rgba(0, 0, 0, 0));
-    width: 100%;
-    top: 0vh;
-    right: 0vh;
-    left: 0vh;
-    height: 7rem;
-    position: fixed;
-    background-color: rgb(226, 43, 211);
-}
-
-header{
-    grid-area: header;
-    display: flex;
-    top: 0rem;
-    left: 0rem;
-    right: 0rem;
-    background-color: blueviolet;
-}
-
-.logo{
-    width: 6rem;
-    margin-left: 1rem;
-    margin-top: 1rem;
-}
-
-.menu{
-    background-color: none;
-}
-
-.navigation{
-    position: sticky;
-    top:2rem;
-    height: 3rem;
-    display: flex;
-    box-sizing: border-box;
-}
-
-.background-image{
-    height: 25rem;
-}
-
-
-
-main{
-    grid-area: main;
-    background-color: rgb(43, 101, 226);
-}
-
-
-
-
-footer{
-    grid-area: footer;
-    background-color: rgb(43, 226, 55);
-}
-
-
-
-h1{
-    color: black;
-} */
