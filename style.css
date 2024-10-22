@@ -58,6 +58,14 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    & p{
+      margin-top: 8vw;
+      text-align: left;
+      margin-left: 1rem;
+      font-size: 1.4rem;
+      color: #000000;
+    }
 }
 
 h1{
@@ -69,13 +77,6 @@ h1{
 
 .book {
     transition: opacity 0.4s 0.2s;
-  }
-  p{
-    margin-top: 8vw;
-    text-align: left;
-    margin-left: 1rem;
-    font-size: 1.4rem;
-    color: #000000;
   }
 
   .page {
