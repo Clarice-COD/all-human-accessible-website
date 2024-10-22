@@ -1,71 +1,3 @@
-body{
-    /* grid opzet */
-    display: grid;
-    /* grid linken */
-    grid-template-areas: "nav" 
-    "header" 
-    "main" 
-    "footer";
-    /* horizontaal */
-    grid-template-columns: 1fr;
-    /* verticaal */
-    grid-template-rows: 3rem 24rem 31rem 26rem;
-    /* geen ruimte bij de randen */
-    margin: 0rem;
-    width: 100%;
-}
-   
-
-/* NAVIGATIE */
-
-nav{
-    /* linkt aan grid */
-    grid-area: nav;
-    /* gradient */
-    background-image: linear-gradient(rgb(0, 0, 0) , rgba(0, 0, 0, 0));
-    z-index: 1;
-}
-
-.logo{
-    /* grootte */
-    width: 5rem;
-    /* afstand van de randen */
-    margin: 1rem;
-}
-
-
-/* HEADER */
-
-header{
-    /* linkt aan header */
-    grid-area: header;
-    background-color: rgb(162, 255, 49);
-    margin-top: -5rem;
-}
-
-.background-image{
-    height: 100%
-}
-
-
-/* MAIN */
-
-main{
-    /* linkt aan main */
-    grid-area: main;
-    background-color: pink;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-h1{
-    text-align: center;
-}
-
-/* book effect */
-
 .book {
     transition: opacity 0.4s 0.2s;
   }
@@ -93,6 +25,7 @@ h1{
   .book {
     perspective: 250vw;
   }
+
 
   .book .pages {
     width: 60vw;
@@ -132,6 +65,8 @@ h1{
     z-index: 2;
   }
 
+
+
   .book .page:nth-child(odd) {
     pointer-events: all;
     transform: rotateY(0deg);
@@ -157,6 +92,9 @@ h1{
     border-color: black;
     background-image: linear-gradient(to left, rgba(0,0,0,.12) 0%, rgba(0,0,0,0) 10%);
   }
+
+
+
 
   .book .page:nth-child(even):before {
     background: rgba(0, 0, 0, 0.2);
@@ -192,84 +130,27 @@ h1{
   }
 
 
+  /* html,
+  body {
+    font-family: 'Lovers Quarrel', cursive;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  } */
 
 
 
-
-
-
-
-/* FOOTER */
-
-footer{
-    /* linkt aan footer */
-    grid-area: footer;
-    background-color: rgb(255, 251, 0);
-}
-
-
-
-
-    /* nav{
-    grid-area: nav;
-    background-image: linear-gradient(rgb(0, 0, 0) , rgba(0, 0, 0, 0));
-    width: 100%;
-    top: 0vh;
-    right: 0vh;
-    left: 0vh;
-    height: 7rem;
-    position: fixed;
-    background-color: rgb(226, 43, 211);
-}
-
-header{
-    grid-area: header;
+  /* html {
+    height: 100%;
+  } */
+   
+  body {
+    min-height: 100%;
     display: flex;
-    top: 0rem;
-    left: 0rem;
-    right: 0rem;
-    background-color: blueviolet;
-}
-
-.logo{
-    width: 6rem;
-    margin-left: 1rem;
-    margin-top: 1rem;
-}
-
-.menu{
-    background-color: none;
-}
-
-.navigation{
-    position: sticky;
-    top:2rem;
-    height: 3rem;
-    display: flex;
-    box-sizing: border-box;
-}
-
-.background-image{
-    height: 25rem;
-}
-
-
-
-main{
-    grid-area: main;
-    background-color: rgb(43, 101, 226);
-}
-
-
-
-
-footer{
-    grid-area: footer;
-    background-color: rgb(43, 226, 55);
-}
-
-
-
-h1{
-    color: black;
-} */
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+    line-height: 1.5em;
+  }
+  .page:nth-child(odd){
+    background-position: right top;
+  }
+  
