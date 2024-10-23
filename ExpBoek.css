@@ -154,3 +154,66 @@
     background-position: right top;
   }
   
+
+
+
+
+
+
+  ............
+
+
+     /* RESPONSIVE */
+ @media (min-width: 408px){
+
+  body{
+    /* de vlakken verticaal verlengd */
+    grid-template-rows: 5rem 16rem 37rem 29rem;
+}
+
+.background-image{
+  height: 100%;
+}
+
+/* BOEK */
+/* Positie aanpassen */
+.book .pages {
+  width: 91vw;
+  height: 74vw;
+}
+
+/* grootte boek aanpassen */
+.book .page {
+  width: 46vw;
+  height: 70vw;
+}
+ }
+
+
+
+
+   /* RESPONSIVE */
+   @media (min-width: 426px){
+    body{
+      /* de vlakken verticaal verlengd */
+      grid-template-rows: 5rem 16rem 48rem 29rem;
+  }
+  
+  .background-image{
+    width: 100%;
+    height: auto;
+  }
+  
+  /* BOEK */
+  /* Positie aanpassen */
+  .book .pages {
+    width: 91vw;
+    height: 74vw;
+  }
+  
+  /* grootte boek aanpassen */
+  .book .page {
+    width: 46vw;
+    height: 70vw;
+  }
+   }

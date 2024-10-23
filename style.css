@@ -54,10 +54,8 @@ main{
     /* linkt aan main */
     grid-area: main;
     background-color: white;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     justify-content: center;
-    align-items: center;
 
     & p{
       margin-top: 8vw;
@@ -71,7 +69,6 @@ main{
 h1{
   text-align: center;
   position: relative;
-  top: -2rem;
 }
 
 /* book effect */
@@ -81,6 +78,8 @@ h1{
     transition: opacity 0.4s 0.2s;
   }
 
+
+ 
   .page {
     width: 30vw;
     height: 44vw;
@@ -100,6 +99,9 @@ h1{
   .book {
     perspective: 250vw;
   }
+  
+
+   /* positie boek aanpassen */
 
   .book .pages {
     width: 160vw;
@@ -110,6 +112,10 @@ h1{
     border-radius: 4px;
     /*box-shadow: 0 0 0 1px #e3dfd8;*/
   }
+
+
+ /* grootte boek aanpassen */
+
   .book .page {
     float: none;
     clear: none;
@@ -221,24 +227,10 @@ footer{
   }
 
 
-
-
-   /* RESPONSIVE */
- @media (min-width: 406px){
-
-  body{
-    /* de vlakken verticaal verlengd */
-    grid-template-rows: 5rem 24rem 52rem 29rem;
-}
-
-.background-image{
-  width: 100%;
-  height: auto;
-}
-
-h1{
-  text-align: center;
-  margin-top: -5rem;
-}
-
- }
+  @media (min-width: 436px){
+    
+    .background-image{
+      width: 100%;
+      height: auto;
+    }
+  }
