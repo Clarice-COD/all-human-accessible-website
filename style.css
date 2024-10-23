@@ -9,12 +9,12 @@ body{
     /* horizontaal */
     grid-template-columns: 1fr;
     /* verticaal */
-    grid-template-rows: 3rem 24rem 28rem 26rem;
+    grid-template-rows: 3rem 24rem 47rem 26rem;
     /* geen ruimte bij de randen */
     margin: 0rem;
     width: 100%;
-}
-   
+}   
+
 
 /* NAVIGATIE */
 
@@ -69,11 +69,13 @@ main{
 }
 
 h1{
-    text-align: center;
-    margin-top: -1rem;
+  text-align: center;
+  position: relative;
+  top: -2rem;
 }
 
 /* book effect */
+
 
 .book {
     transition: opacity 0.4s 0.2s;
@@ -89,6 +91,8 @@ h1{
     background-size: cover;
   }
 
+
+
   .page:nth-child(even) {
     clear: both;
   }
@@ -98,8 +102,8 @@ h1{
   }
 
   .book .pages {
-    width: 60vw;
-    height: 44vw;
+    width: 160vw;
+    height: 134vw;
     position: relative;
     transform-style: preserve-3d;
     backface-visibility: hidden;
@@ -112,8 +116,8 @@ h1{
     margin: 0;
     position: absolute;
     top: 0;
-    width: 30vw;
-    height: 44vw;
+    width: 80vw;
+    height: 130vw;
     transform-origin: 0 0;
     transition: transform 1.4s;
     backface-visibility: hidden;
@@ -220,15 +224,21 @@ footer{
 
 
    /* RESPONSIVE */
- @media (min-width: 693px){
+ @media (min-width: 406px){
 
   body{
     /* de vlakken verticaal verlengd */
-    grid-template-rows: 5rem 24rem 48rem 29rem;
+    grid-template-rows: 5rem 24rem 52rem 29rem;
 }
 
 .background-image{
-  width: 100%
+  width: 100%;
+  height: auto;
+}
+
+h1{
+  text-align: center;
+  margin-top: -5rem;
 }
 
  }
