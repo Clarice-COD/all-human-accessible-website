@@ -195,13 +195,6 @@ h1{
   }
 
 
-
-
-
-
-
-
-
 /* FOOTER */
 
 footer{
@@ -222,3 +215,16 @@ footer{
     margin-left: 2rem;
     color: #567046;
   }
+
+
+
+
+   /* RESPONSIVE */
+ @media (min-width: 693px){
+
+  body{
+    /* de vlakken verticaal verlengd */
+    grid-template-rows: 5rem 24rem 48rem 29rem;
+}
+
+ }
