@@ -101,8 +101,7 @@ h3{
 }
 
 .ProductFotos{
-  width:80%;
-  position: sticky;
+  width:75%;
   display: block;
   margin: auto;
   margin-top: 1rem;
@@ -118,13 +117,26 @@ h4{
 }
 
 .ButtonAglaonema{
+  position:relative;
+  bottom: 1.5rem;
   width:6rem;
   height: 2rem;
-  position:sticky;
   display: block;
   margin: auto;
   border-radius: 0.2rem;
-  bottom: 2rem;
+  background-color:#567046;
+  border:none;
+  color:#F8E9C2;
+}
+
+.ButtonGynura{
+  position:relative;
+  bottom: 1.5rem;
+  width:6rem;
+  height: 2rem;
+  display: block;
+  margin: auto;
+  border-radius: 0.2rem;
   background-color:#567046;
   border:none;
   color:#F8E9C2;
