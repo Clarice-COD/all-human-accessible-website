@@ -1,281 +1,301 @@
-body{
-    /* grid opzet */
-    display: grid;
-    /* grid linken */
-    grid-template-areas: "nav" 
-    "header" 
-    "main" 
+body {
+  /* grid opzet */
+  display: grid;
+  /* grid linken */
+  grid-template-areas: "nav"
+    "header"
+    "main"
     "footer";
-    /* horizontaal */
-    grid-template-columns: 1fr;
-    /* verticaal */
-    grid-template-rows: 3rem 33rem 37rem 26rem;
-    /* geen ruimte bij de randen */
-    margin: 0rem;
-    width: 100%;
-}   
+  /* horizontaal */
+  grid-template-columns: 1fr;
+  /* verticaal */
+  grid-template-rows: 3rem 24rem 46rem 26rem;
+  /* geen ruimte bij de randen */
+  margin: 0rem;
+  width: 100%;
+}
 
 
 /* NAVIGATIE */
 
-nav{
-    /* linkt aan grid */
-    grid-area: nav;
-    /* gradient */
-    background-image: linear-gradient(rgb(0, 0, 0) , rgba(0, 0, 0, 0));
-    z-index: 1;
+nav {
+  /* linkt aan grid */
+  grid-area: nav;
+  /* gradient */
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 1;
 }
 
-.logo{
-    /* grootte */
-    width: 5rem;
-    /* afstand van de randen */
-    margin: 1rem;
+.logo {
+  /* grootte */
+  width: 5rem;
+  /* afstand van de randen */
+  margin: 1rem;
 }
 
 
 /* HEADER */
 
-header{
-    /* linkt aan header */
-    grid-area: header;
-    background-color: rgb(162, 255, 49);
-    margin-top: -5rem;
+header {
+  /* linkt aan header */
+  grid-area: header;
+  background-color: rgb(162, 255, 49);
+  margin-top: -5rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-.background-image{
-    height: 100%;
+.background-image {
+  height: 100%;
+  width: auto;
 }
 
 
 /* MAIN */
 
-main{
-    /* linkt aan main */
-    grid-area: main;
-    background-color: white;
-    justify-content: center;
+main {
+  /* linkt aan main */
+  grid-area: main;
+  background-color: white;
+  justify-content: center;
 
-    & p{
-      margin-top: 8vw;
-      text-align: left;
-      margin-left: 1rem;
-      font-size: 1.4rem;
-      color: #000000;
-    }
+  & p {
+    margin-top: 8vw;
+    text-align: left;
+    margin-left: 1rem;
+    font-size: 1.4rem;
+    color: #000000;
+  }
 }
 
-h1{
+h1 {
+  top: 1rem;
   text-align: center;
   position: relative;
+  margin-bottom: 4rem;
 }
 
 /* book effect */
 
 
 .book {
-    transition: opacity 0.4s 0.2s;
-  }
-
-
- 
-  .page {
-    width: 30vw;
-    height: 44vw;
-    background-color: #111111;
-    float: left;
-    margin-bottom: 0.5em;
-    background: left top no-repeat;
-    background-size: cover;
-  }
+  transition: opacity 0.4s 0.2s;
+}
 
 
 
-  .page:nth-child(even) {
-    clear: both;
-  }
-
-  .book {
-    perspective: 250vw;
-  }
-  
-
-   /* positie boek aanpassen */
-
-  .book .pages {
-    width: 160vw;
-    height: 134vw;
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-    border-radius: 4px;
-    /*box-shadow: 0 0 0 1px #e3dfd8;*/
-  }
+.page {
+  width: 30vw;
+  height: 44vw;
+  background-color: #111111;
+  float: left;
+  margin-bottom: 0.5em;
+  background: left top no-repeat;
+  background-size: cover;
+}
 
 
- /* grootte boek aanpassen */
 
-  .book .page {
-    float: none;
-    clear: none;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    width: 80vw;
-    height: 130vw;
-    transform-origin: 0 0;
-    transition: transform 1.4s;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
-    cursor: pointer;
-    user-select: none;
-    background-color: #f0f0f0;
-  }
+.page:nth-child(even) {
+  clear: both;
+}
 
-  .book .page:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0);
-    transition: background 0.7s;
-    z-index: 2;
-  }
+.book {
+  perspective: 250vw;
+}
 
-  .book .page:nth-child(odd) {
-    pointer-events: all;
-    transform: rotateY(0deg);
-    right: 0;
-    border-radius: 0 4px 4px 0;
-    background-image: linear-gradient(to right, rgba(0,0,0,.15) 0%, rgba(0,0,0,0) 10%);
-  }
-  .book .page:nth-child(odd):hover {
-    transform: rotateY(-15deg);
-  }
-  .book .page:nth-child(odd):hover:before {
-    background: rgba(0, 0, 0, 0.03);
-  }
-  .book .page:nth-child(odd):before {
-    background: rgba(0, 0, 0, 0);
-  }
-  .book .page:nth-child(even) {
-    pointer-events: none;
-    transform: rotateY(180deg);
-    transform-origin: 100% 0;
-    left: 0;
-    border-radius: 4px 0 0 4px;
-    border-color: black;
-    background-image: linear-gradient(to left, rgba(0,0,0,.12) 0%, rgba(0,0,0,0) 10%);
-  }
 
-  .book .page:nth-child(even):before {
-    background: rgba(0, 0, 0, 0.2);
-  }
-  .book .page.grabbing {
-    transition: none;
-  }
-  .book .page.flipped:nth-child(odd) {
-    pointer-events: none;
-    transform: rotateY(-180deg);
-  }
-  .book .page.flipped:nth-child(odd):before {
-    background: rgba(0, 0, 0, 0.2);
-  }
-  .book .page.flipped:nth-child(even) {
-    pointer-events: all;
-    transform: rotateY(0deg);
-  }
-  .book .page.flipped:nth-child(even):hover {
-    transform: rotateY(15deg);
-  }
-  .book .page.flipped:nth-child(even):hover:before {
-    background: rgba(0, 0, 0, 0.03);
-  }
-  .book .page.flipped:nth-child(even):before {
-    background: rgba(0, 0, 0, 0);
-  }
+/* positie boek aanpassen */
 
-  *,
-  * :before,
-  *:after {
-    box-sizing: border-box;
-  }
+.book .pages {
+  width: 160vw;
+  height: 134vw;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  border-radius: 4px;
+  /*box-shadow: 0 0 0 1px #e3dfd8;*/
+}
+
+
+/* grootte boek aanpassen */
+
+.book .page {
+  float: none;
+  clear: none;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 80vw;
+  height: 130vw;
+  transform-origin: 0 0;
+  transition: transform 1.4s;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  user-select: none;
+  background-color: #f0f0f0;
+}
+
+.book .page:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.7s;
+  z-index: 2;
+}
+
+.book .page:nth-child(odd) {
+  pointer-events: all;
+  transform: rotateY(0deg);
+  right: 0;
+  border-radius: 0 4px 4px 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .15) 0%, rgba(0, 0, 0, 0) 10%);
+}
+
+.book .page:nth-child(odd):hover {
+  transform: rotateY(-15deg);
+}
+
+.book .page:nth-child(odd):hover:before {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.book .page:nth-child(odd):before {
+  background: rgba(0, 0, 0, 0);
+}
+
+.book .page:nth-child(even) {
+  pointer-events: none;
+  transform: rotateY(180deg);
+  transform-origin: 100% 0;
+  left: 0;
+  border-radius: 4px 0 0 4px;
+  border-color: black;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .12) 0%, rgba(0, 0, 0, 0) 10%);
+}
+
+.book .page:nth-child(even):before {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.book .page.grabbing {
+  transition: none;
+}
+
+.book .page.flipped:nth-child(odd) {
+  pointer-events: none;
+  transform: rotateY(-180deg);
+}
+
+.book .page.flipped:nth-child(odd):before {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.book .page.flipped:nth-child(even) {
+  pointer-events: all;
+  transform: rotateY(0deg);
+}
+
+.book .page.flipped:nth-child(even):hover {
+  transform: rotateY(15deg);
+}
+
+.book .page.flipped:nth-child(even):hover:before {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.book .page.flipped:nth-child(even):before {
+  background: rgba(0, 0, 0, 0);
+}
+
+*,
+* :before,
+*:after {
+  box-sizing: border-box;
+}
 
 
 /* FOOTER */
 
-footer{
-    /* linkt aan footer */
-    grid-area: footer;
-    background-color: #F8E9C2;
+footer {
+  /* linkt aan footer */
+  grid-area: footer;
+  background-color: #F8E9C2;
 
-    & p{
-      margin-left: 2rem;
-      font-size: 1rem;
-      line-height: 1.4;
-      color: #567046;
-    }
-  }
-  
-  h2{
-    margin-top: 3rem;
+  & p {
     margin-left: 2rem;
+    font-size: 1rem;
+    line-height: 1.4;
     color: #567046;
   }
+}
+
+h2 {
+  margin-top: 3rem;
+  margin-left: 2rem;
+  color: #567046;
+}
 
 
-  @media (min-width: 436px){
-    
-    /* HEADER */
-    .background-image{
-      height: 100%;
-    }
+@media (min-width: 426px) {
+
+  /* HEADER */
+  .background-image {
+    height: 100%;
+  }
 
 
-    /* BOEK */
-    /* positie boek aanpassen */
+  /* BOEK */
+  /* positie boek aanpassen */
   .book .pages {
     /* ruimte tussen de 2 pagina's */
     width: 80vw;
+    max-width: 90%;
     /* hoogte pagina's */
     height: 134vw;
     /*box-shadow: 0 0 0 1px #e3dfd8;*/
   }
 
 
- /* grootte boek aanpassen */
+  /* grootte boek aanpassen */
 
   .book .page {
-    
+
     top: 0;
     /* breedte pagina */
     width: 40vw;
+    max-width: 90%;
     /* hoogte pagina */
     height: 60vw;
+    max-height: 90%;
   }
 
-  body{
- /* verticaal */
-    grid-template-rows: 3rem 24rem 27rem 26rem;
-}
+  body {
+    /* verticaal */
+    grid-template-rows: 3rem 24rem 37rem 26rem;
   }
-
-    @media (min-width: 696px){
-    
-    /* HEADER */
-    .background-image{
-      width: 100%;
-      height: auto;
-    }
-
-      body{
- /* verticaal */
-    grid-template-rows: 3rem 24rem 27rem 26rem;
 }
 
+
+
+@media (min-width: 696px) {
+
+  /* HEADER */
+  .background-image {
+    width: 100%;
+    height: auto;
   }
+
+  body {
+    /* verticaal */
+    grid-template-rows: 3rem 24rem 51rem 26rem;
+  }
+}
