@@ -73,10 +73,21 @@ h1 {
   text-align: center;
   position: relative;
   margin-bottom: 4rem;
+  font-size: 3rem;
 }
 
 .harry{
-  width: 20%;
+  width: 60%;
+  position: sticky;
+  display: block;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+h3{
+  text-align: center;
+  color: #567046;
+  font-size: 2rem;
 }
 
 /* book effect */
@@ -301,5 +312,50 @@ h2 {
   body {
     /* verticaal */
     grid-template-rows: 3rem 24rem 51rem 26rem;
+  }
+}
+
+
+
+@media (min-width: 1025px) {
+
+  /* HEADER */
+  .background-image {
+    width: 100%;
+    height: auto;
+  }
+
+  body {
+    /* verticaal */
+    grid-template-rows: 3rem 24rem 60rem 26rem;
+  }
+
+    /* BOEK */
+  /* positie boek aanpassen */
+  .book .pages {
+    /* ruimte tussen de 2 pagina's */
+    width: 60vw;
+    max-width: 90%;
+    /* hoogte pagina's */
+    height: 134vw;
+    /*box-shadow: 0 0 0 1px #e3dfd8;*/
+  }
+
+
+  /* grootte boek aanpassen */
+
+  .book .page {
+
+    top: 0;
+    /* breedte pagina */
+    width: 30vw;
+    max-width: 90%;
+    /* hoogte pagina */
+    height: 40vw;
+    max-height: 90%;
+  }
+
+  h1{
+    font-size: 4rem;
   }
 }
