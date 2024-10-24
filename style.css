@@ -9,7 +9,7 @@ body{
     /* horizontaal */
     grid-template-columns: 1fr;
     /* verticaal */
-    grid-template-rows: 3rem 24rem 47rem 26rem;
+    grid-template-rows: 3rem 33rem 37rem 26rem;
     /* geen ruimte bij de randen */
     margin: 0rem;
     width: 100%;
@@ -44,7 +44,7 @@ header{
 }
 
 .background-image{
-    height: 100%
+    height: 100%;
 }
 
 
@@ -54,7 +54,6 @@ main{
     /* linkt aan main */
     grid-area: main;
     background-color: white;
-    display: grid;
     justify-content: center;
 
     & p{
@@ -107,6 +106,9 @@ h1{
     width: 160vw;
     height: 134vw;
     position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     transform-style: preserve-3d;
     backface-visibility: hidden;
     border-radius: 4px;
@@ -229,8 +231,51 @@ footer{
 
   @media (min-width: 436px){
     
+    /* HEADER */
+    .background-image{
+      height: 100%;
+    }
+
+
+    /* BOEK */
+    /* positie boek aanpassen */
+  .book .pages {
+    /* ruimte tussen de 2 pagina's */
+    width: 80vw;
+    /* hoogte pagina's */
+    height: 134vw;
+    /*box-shadow: 0 0 0 1px #e3dfd8;*/
+  }
+
+
+ /* grootte boek aanpassen */
+
+  .book .page {
+    
+    top: 0;
+    /* breedte pagina */
+    width: 40vw;
+    /* hoogte pagina */
+    height: 60vw;
+  }
+
+  body{
+ /* verticaal */
+    grid-template-rows: 3rem 24rem 27rem 26rem;
+}
+  }
+
+    @media (min-width: 696px){
+    
+    /* HEADER */
     .background-image{
       width: 100%;
       height: auto;
     }
+
+      body{
+ /* verticaal */
+    grid-template-rows: 3rem 24rem 27rem 26rem;
+}
+
   }
