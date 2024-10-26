@@ -99,11 +99,14 @@ h3 {
 .ProductFotos {
   /* de grootte van de image is afhankelijk van de oppervlakte van de ouder, in dit geval het boek */
   width: 75%;
+  height: 60%;
+  object-fit: cover;
   display: block;
   position: relative;
   /* centreerd element in het midden */
   margin: auto;
   margin-top: 1rem;
+  margin-bottom: -1rem;
   /* ronde hoeken */
   border-radius: 0.5rem;
 }
@@ -147,8 +150,8 @@ h4 {
 /* coppied code book */
 
 .page {
-  width: 30vw;
-  height: 44vw;
+  width: 77vw;
+  height: 113vw;
   background-color: #111111;
   float: left;
   margin-bottom: 0.5em;
@@ -178,6 +181,10 @@ h4 {
   /* verbergd de achterkant van het element tijdens het roteren */
   backface-visibility: hidden;
   border-radius: 4px;
+   /* ruimte tussen de 2 pagina's */
+   width: 153vw;
+   /* hoogte pagina's */
+   height: 134vw;
 }
 
 
@@ -302,6 +309,7 @@ footer {
     font-size: 1rem;
     line-height: 1.4;
     color: #567046;
+    
   }
 }
 
@@ -327,11 +335,9 @@ h2 {
   /* positie boek aanpassen */
   .book .pages {
     /* ruimte tussen de 2 pagina's */
-    width: 80vw;
-    max-width: 90%;
+    width: 95vw;
     /* hoogte pagina's */
     height: 134vw;
-    /*box-shadow: 0 0 0 1px #e3dfd8;*/
   }
 
 
@@ -341,16 +347,16 @@ h2 {
 
     top: 0;
     /* breedte pagina */
-    width: 40vw;
+    width: 48vw;
     max-width: 90%;
     /* hoogte pagina */
-    height: 60vw;
-    max-height: 90%;
+    height: 80vw;
+    max-height: 56%;
   }
 
   body {
     /* verticaal */
-    grid-template-rows: 3rem 24rem 37rem 26rem;
+    grid-template-rows: 3rem 24rem 44rem 26rem;
   }
 }
 
@@ -371,6 +377,27 @@ h2 {
   body {
     /* verticaal */
     grid-template-rows: 3rem 24rem 51rem 26rem;
+  }
+
+ /* BOEK */
+  /* positie boek aanpassen */
+  .book .pages {
+    /* ruimte tussen de 2 pagina's */
+    width: 86vw;
+  }
+
+
+  /* grootte boek aanpassen */
+
+  .book .page {
+
+    top: 0;
+    /* breedte pagina */
+    width: 43vw;
+    max-width: 90%;
+    /* hoogte pagina */
+    height: 65vw;
+    max-height: 56%;
   }
 }
 
@@ -395,28 +422,19 @@ h2 {
   }
 
   /* BOEK */
-  /* positie boek aanpassen */
   .book .pages {
     /* ruimte tussen de 2 pagina's */
     width: 60vw;
-    max-width: 90%;
     /* hoogte pagina's */
     height: 134vw;
-    /*box-shadow: 0 0 0 1px #e3dfd8;*/
   }
 
-
-  /* grootte boek aanpassen */
-
   .book .page {
-
     top: 0;
     /* breedte pagina */
     width: 30vw;
-    max-width: 90%;
     /* hoogte pagina */
     height: 40vw;
-    max-height: 90%;
   }
 
   h1 {
