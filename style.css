@@ -6,13 +6,10 @@ body {
     "header"
     "main"
     "footer";
-  /* horizontaal */
-  grid-template-columns: 1fr;
   /* verticaal */
   grid-template-rows: 3rem 24rem 46rem 26rem;
   /* geen ruimte bij de randen */
   margin: 0rem;
-  width: 100%;
 }
 
 
@@ -23,6 +20,7 @@ nav {
   grid-area: nav;
   /* gradient */
   background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  /* komt op voorgrond */
   z-index: 1;
 }
 
@@ -54,9 +52,10 @@ header {
 /* MAIN */
 
 main {
-  /* linkt aan main */
+  /* grid linkt aan main */
   grid-area: main;
   background-color: white;
+  /* centreren */
   justify-content: center;
 
   & p {
@@ -76,21 +75,21 @@ h1 {
   font-size: 3rem;
 }
 
-.harry{
+.harry {
   width: 60%;
-  position: sticky;
+  position: relative;
   display: block;
+  /* centreerd element in het midden */
   margin: auto;
   margin-top: 4rem;
 }
 
-h3{
+h3 {
   text-align: center;
   color: #567046;
   font-size: 2rem;
   font-family: "Denk One", regular;
   margin-bottom: 4rem;
-
 }
 
 /* book effect */
@@ -100,46 +99,48 @@ h3{
   transition: opacity 0.4s 0.2s;
 }
 
-.ProductFotos{
-  width:75%;
+.ProductFotos {
+  width: 75%;
   display: block;
+  /* centreerd element in het midden */
   margin: auto;
   margin-top: 1rem;
   border-radius: 0.5rem;
 }
 
-h4{
+h4 {
   text-align: center;
   color: #567046;
   font-size: 2rem;
   font-family: "Denk One", regular;
-  margin-top:1.5rem;
+  margin-top: 1.5rem;
 }
 
-.ButtonAglaonema{
-  position:relative;
+.ButtonAglaonema {
+  position: relative;
   bottom: 1.5rem;
-  width:6rem;
+  width: 6rem;
+  height: 2rem;
+  display: block;
+  margin: auto;
+  /* ronde randen */
+  border-radius: 0.2rem;
+  background-color: #567046;
+  border: none;
+  color: #F8E9C2;
+}
+
+.ButtonGynura {
+  position: relative;
+  bottom: 1.5rem;
+  width: 6rem;
   height: 2rem;
   display: block;
   margin: auto;
   border-radius: 0.2rem;
-  background-color:#567046;
-  border:none;
-  color:#F8E9C2;
-}
-
-.ButtonGynura{
-  position:relative;
-  bottom: 1.5rem;
-  width:6rem;
-  height: 2rem;
-  display: block;
-  margin: auto;
-  border-radius: 0.2rem;
-  background-color:#567046;
-  border:none;
-  color:#F8E9C2;
+  background-color: #567046;
+  border: none;
+  color: #F8E9C2;
 }
 
 
@@ -310,9 +311,10 @@ h2 {
   .background-image {
     height: 100%;
   }
-h3{
-  font-size: 1.5rem;
-}
+
+  h3 {
+    font-size: 1.5rem;
+  }
 
   /* BOEK */
   /* positie boek aanpassen */
@@ -354,8 +356,8 @@ h3{
     width: 100%;
     height: auto;
   }
-  
-  h3{
+
+  h3 {
     font-size: 2rem;
   }
 
@@ -375,7 +377,7 @@ h3{
     height: auto;
   }
 
-  h3{
+  h3 {
     font-size: 3rem;
     margin-top: 0rem;
   }
@@ -385,7 +387,7 @@ h3{
     grid-template-rows: 3rem 24rem 60rem 26rem;
   }
 
-    /* BOEK */
+  /* BOEK */
   /* positie boek aanpassen */
   .book .pages {
     /* ruimte tussen de 2 pagina's */
@@ -410,7 +412,7 @@ h3{
     max-height: 90%;
   }
 
-  h1{
+  h1 {
     font-size: 4rem;
   }
 }

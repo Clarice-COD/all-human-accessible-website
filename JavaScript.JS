@@ -1,4 +1,6 @@
-var pages = document.getElementsByClassName('page');
+
+
+const pages = document.getElementsByClassName('page');
   for(var i = 0; i < pages.length; i++)
     {
       var page = pages[i];
