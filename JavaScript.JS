@@ -1,5 +1,7 @@
 
 
+// document.ElementsByClassName('page') = selecteerd alle elementen in de class page
+// const pages = een verzameling van alle classes met page
 const pages = document.getElementsByClassName('page');
   for(var i = 0; i < pages.length; i++)
     {
@@ -13,7 +15,7 @@ const pages = document.getElementsByClassName('page');
   document.addEventListener('DOMContentLoaded', function(){
     for(var i = 0; i < pages.length; i++)
       {
-        //Or var page = pages[i];
+  
         pages[i].pageNum = i + 1;
         pages[i].onclick=function()
           {
