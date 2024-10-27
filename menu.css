@@ -1,0 +1,81 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    position: sticky;
+    top:0;
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
+
+
+  nav {
+    color: antiquewhite;
+    background-color: brown;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    translate: 100% 0%;
+    /* translate: -100% 0%; */
+    transition: translate .3s;
+
+    &.toonMenu {
+        translate: 0% 0%;
+       }
+    }
+
+    .MenuIcon{
+        width:3rem;
+    }
+
+    .MenuCross{
+        width:3rem;
+    }
+
+
+
+
+
+    /* @media (min-width:38em) {
+        header > button {
+          display: none; 
+        }
+
+        nav {
+            position: static;
+            translate:unset;
+            padding:0;
+            background:none;  
+          }
+
+          nav button {
+            display: none;
+          }
+
+          nav ul {
+            display: flex;
+            gap: 1em; 
+          }
+            
+            nav a {
+                flex-direction: column;
+                border: none;
+              }
+
+          header > a:last-of-type {
+            flex-direction: column;
+          }
+    }
+
+    @media (min-width:57em) {
+        header > a:last-of-type,
+        nav a {
+          flex-direction: row;
+        }
+      } */
