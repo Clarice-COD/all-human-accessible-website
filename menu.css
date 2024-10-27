@@ -3,7 +3,7 @@ body{
     background-color: black;
 }
     
-    header {
+    .menu {
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -12,22 +12,15 @@ body{
     top:0;
   }
 
- ul {
-    display: flex;
-    list-style-type: none; 
-    padding: 0; 
-}
-
 li {
-    margin-top: 1.4rem;
+    list-style: none;
 }
 
   a{
     color:hsl(0, 0%, 100%);
     text-decoration: none;
-    margin-left: 3rem;
+    margin-left: 1rem;
     font-size: 2rem;
-
   }
 
   nav {
@@ -69,8 +62,16 @@ li {
 
 
 
-    @media (min-width:38em) {
-        header > button {
+    @media (min-width:817px) {
+
+        a{
+            color:hsl(0, 0%, 100%);
+            text-decoration: none;
+            margin-left: 1rem;
+            font-size: 1.5rem;
+          }
+
+        .menu > button {
           display: none; 
         }
         
@@ -89,6 +90,9 @@ li {
           display: flex;
           flex-direction: row;
           gap: 1em;  
+          position: absolute;
+          right: 1rem;
+          top:rem;
         }
         
         nav a {
@@ -96,7 +100,7 @@ li {
           border: none;
         }
         
-        header > a:last-of-type {
+        .menu > a:last-of-type {
           flex-direction: row;
         }
       }

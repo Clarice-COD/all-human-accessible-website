@@ -1,4 +1,4 @@
-var openButton = document.querySelector("header > button");
+var openButton = document.querySelector(".menu > button");
 
 openButton.addEventListener("click", openMenu);
 
