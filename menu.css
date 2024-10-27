@@ -1,28 +1,44 @@
-header {
+
+body{
+    background-color: black;
+}
+    
+    header {
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
-    
     position: sticky;
     top:0;
   }
 
+ ul {
+    display: flex;
+    list-style-type: none; 
+    padding: 0; 
+}
+
+li {
+    margin-top: 1.4rem;
+}
+
   a{
-    color: white;
+    color:hsl(0, 0%, 100%);
     text-decoration: none;
+    margin-left: 3rem;
+    font-size: 2rem;
+
   }
 
-
   nav {
-    color: antiquewhite;
-    background-color: brown;
+    background-color: #567046;
     position:fixed;
     left:0;
     right:0;
     top:0;
     bottom:0;
     translate: 100% 0%;
-    /* translate: -100% 0%; */
+
     transition: translate .3s;
 
     &.toonMenu {
@@ -36,44 +52,57 @@ header {
 
     .MenuCross{
         width:3rem;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+
+    .BG-MenuButton{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        right: 0rem;
+        top: 0rem;
     }
 
 
 
 
 
-    /* @media (min-width:38em) {
+    @media (min-width:38em) {
         header > button {
           display: none; 
         }
-
+        
         nav {
-            position: static;
-            translate:unset;
-            padding:0;
-            background:none;  
-          }
-
-          nav button {
-            display: none;
-          }
-
-          nav ul {
-            display: flex;
-            gap: 1em; 
-          }
-            
-            nav a {
-                flex-direction: column;
-                border: none;
-              }
-
-          header > a:last-of-type {
-            flex-direction: column;
-          }
-    }
-
-    @media (min-width:57em) {
+          position: static;
+          translate:unset;
+          padding:0;
+          background:none;  
+        }
+        
+        nav button {
+          display: none;
+        }
+        
+        nav ul {
+          display: flex;
+          flex-direction: row;
+          gap: 1em;  
+        }
+        
+        nav a {
+          flex-direction: row;
+          border: none;
+        }
+        
+        header > a:last-of-type {
+          flex-direction: row;
+        }
+      }
+      
+      
+      /* @media (min-width:57em) {
         header > a:last-of-type,
         nav a {
           flex-direction: row;

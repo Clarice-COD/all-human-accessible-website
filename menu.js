@@ -1,4 +1,4 @@
-const openButton = document.querySelector("header > button");
+var openButton = document.querySelector("header > button");
 
 openButton.addEventListener("click", openMenu);
 
@@ -6,21 +6,20 @@ openButton.addEventListener("click", openMenu);
 // stap 3: voeg in de functie een class toe aan de nav
 function openMenu() {  
   // zoek de nav op
-  const deNav = document.querySelector("nav");
+  var deNav = document.querySelector("nav");
   
   // voeg class toe aan nav
   deNav.classList.add("toonMenu"); 
 }
 
-
-const sluitButton = document.querySelector("nav button");
+var sluitButton = document.querySelector("nav button");
 
 // stap 2 - laat die button luisteren naar kliks
 sluitButton.addEventListener("click", sluitMenu);
 
 // stap 3 - in de functie verwijder de class van de nav
 function sluitMenu() {
-  const deNav = document.querySelector("nav");
+  var deNav = document.querySelector("nav");
   deNav.classList.remove("toonMenu");
 }
 
