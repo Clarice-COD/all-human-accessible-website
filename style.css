@@ -32,7 +32,6 @@ left:1rem;
 /* HAMBURGER MENU */
   
 .menu {
-  z-index: 2;
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -266,18 +265,6 @@ h4 {
   background-color: #f0f0f0;
 }
 
-/* .book .page:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0);
-  transition: background 0.7s;
-  z-index: 2;
-} */
-
 .book .page:nth-child(odd) {
   /* pointer-events: all;
   transform: rotateY(0deg); */
@@ -302,14 +289,12 @@ h4 {
 }
 
 .book .page:nth-child(even) {
-  /* pointer-events: none; */
   /* zorgt dat de bladzijdes achter elkaar zitten */
   transform: rotateY(180deg);
   /* zorgt dat de bladzijde op de juiste manier omslaat */
   transform-origin: 100% 0;
   /* left: 0; */
   border-radius: 4px 0 0 4px;
-  /* border-color: black; */
   /* zorgt voor schaduw effecten op de omgeslagen pagina's */
   background-image: linear-gradient(to left, rgba(0, 0, 0, .12) 0%, rgba(0, 0, 0, 0) 10%);
 }
@@ -333,7 +318,6 @@ h4 {
 }
 
 .book .page.flipped:nth-child(even) {
-  /* pointer-events: all; */
   /* zorgd dat de omgeslagen bladzijde ernaast komt */
   transform: rotateY(0deg);
 }
@@ -350,13 +334,6 @@ h4 {
 .book .page.flipped:nth-child(even):before {
   /* background: rgba(0, 0, 0, 0); */
 }
-
-/* *,
-* :before,
-*:after {
-  box-sizing: border-box;
-} */
-
 
 /* FOOTER */
 
@@ -393,7 +370,6 @@ h2 {
   }
 
   /* BOEK */
-  /* positie boek aanpassen */
   .book .pages {
     /* ruimte tussen de 2 pagina's */
     width: 95vw;
@@ -519,7 +495,6 @@ h2 {
   }
   
   nav {
-    position: static;
     translate:unset;
     padding:0;
     background:none;  
