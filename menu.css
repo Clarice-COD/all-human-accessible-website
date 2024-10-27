@@ -1,4 +1,7 @@
 
+
+/* HAMBURGER MENU */
+
 body{
     background-color: black;
 }
@@ -31,7 +34,6 @@ li {
     top:0;
     bottom:0;
     translate: 100% 0%;
-
     transition: translate .3s;
 
     &.toonMenu {
@@ -60,7 +62,7 @@ li {
 
 
 
-
+/* DESKTOP MENU */
 
     @media (min-width:817px) {
 
@@ -104,11 +106,3 @@ li {
           flex-direction: row;
         }
       }
-      
-      
-      /* @media (min-width:57em) {
-        header > a:last-of-type,
-        nav a {
-          flex-direction: row;
-        }
-      } */

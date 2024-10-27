@@ -1,3 +1,7 @@
+
+
+// MENU
+
 var openButton = document.querySelector(".menu > button");
 
 openButton.addEventListener("click", openMenu);
