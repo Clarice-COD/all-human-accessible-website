@@ -19,48 +19,38 @@ body {
 nav {
   /* linkt naar grid */
   grid-area: nav;
-  /* gradient */
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0));
-  /* komt op voorgrond */
-  z-index: 1;
 }
 
 .logo {
+position: absolute;
+top:1rem;
+left:1rem;
   /* grootte */
   width: 5rem;
-  /* afstand van de randen */
-  margin: 1rem;
-}
-
-/* HEADER */
-
-header {
-  /* linkt naar grid */
-  grid-area: header;
-  background-color: rgb(162, 255, 49);
-  margin-top: -5rem;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.background-image {
-  height: 100%;
-  width: auto;
 }
 
 /* HAMBURGER MENU */
   
-  .menu {
+.menu {
+  z-index: 2;
   display: flex;
   position: relative;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top:0;
+  height: 6rem;
+  /* gradient */
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0));
 }
 
 li {
   list-style: none;
+  margin-bottom: 4rem;
+}
+
+ul{
+  margin-top: 7rem;
 }
 
 a{
@@ -71,6 +61,7 @@ a{
 }
 
 nav {
+  z-index: 1;
   background-color: #567046;
   position:fixed;
   left:0;
@@ -100,10 +91,26 @@ nav {
       position: absolute;
       background-color: rgba(0, 0, 0, 0);
       border: none;
-      right: 0rem;
-      top: 0rem;
+      right: 1rem;
+      top: 1rem;
   }
 
+
+/* HEADER */
+
+header {
+  /* linkt naar grid */
+  grid-area: header;
+  background-color: rgb(162, 255, 49);
+  margin-top: -5rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.background-image {
+  height: 100%;
+  width: auto;
+}
 
 
 /* MAIN */
@@ -507,7 +514,7 @@ h2 {
       font-size: 1.5rem;
     }
 
-  .menu > button {
+  button {
     display: none; 
   }
   
@@ -530,13 +537,17 @@ h2 {
     right: 1rem;
     top:rem;
   }
+
+  ul{
+    margin-top: 1rem;
+  }
   
   nav a {
     flex-direction: row;
     border: none;
   }
   
-  .menu > a:last-of-type {
+  a:last-of-type {
     flex-direction: row;
   }
 }
